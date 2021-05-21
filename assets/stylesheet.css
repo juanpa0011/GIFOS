@@ -1,0 +1,233 @@
+header div {
+  width: 100%;
+  height: 8%;
+}
+
+header div .logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 6%;
+  margin-top: 35px;
+}
+
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+main div .title {
+  width: 76%;
+  height: 100px;
+}
+
+main div .title h1 {
+  font-size: 25px;
+  text-align: center;
+  color: #572EE5;
+}
+
+main div .title h1 span {
+  color: #50E3C2;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 0.5fr;
+      grid-template-rows: 1fr 0.5fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav div {
+  width: 73%;
+  height: 130px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+nav .navsphere {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 0.5fr;
+      grid-template-columns: 1.5fr 0.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: 0;
+  height: 50px;
+  width: 335px;
+  border: 2px solid #572EE5;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+nav .navsphere img {
+  width: 20px;
+  height: 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav .navsphere input {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 0px;
+  height: 90%;
+  font-size: 16px;
+}
+
+.trending div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 45px;
+  width: 236px;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.trending div p {
+  size: 14px;
+  color: #572EE5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.trending div h4 {
+  padding-bottom: 5px;
+  size: 19px;
+  color: #572EE5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.trendinggifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  background-color: #F3F5F8;
+  height: 430px;
+}
+
+.trendinggifos .galleryfoot {
+  width: 330px;
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.trendinggifos .galleryfoot h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #572EE5;
+}
+
+.trendinggifos .galleryfoot p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.trendinggifos .gallery {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 260px;
+  height: 180px;
+  background-color: red;
+  margin-bottom: 82px;
+  margin-top: 32px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
+footer p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 47px;
+}
+
+footer .sharing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer .sharing img {
+  padding: 22px 19px;
+}
+
+footer .copyright {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 28px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.blueline {
+  width: 100%;
+  height: 5px;
+  background-color: #572EE5;
+}
+/*# sourceMappingURL=stylesheet.css.map */

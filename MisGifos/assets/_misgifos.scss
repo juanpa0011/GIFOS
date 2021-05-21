@@ -1,0 +1,16 @@
+.misgifos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 21px;
+    margin: 0px 21px;
+    img {
+        width: 42%;
+        height: 120px
+    }
+    .placeholder {
+        justify-self: center;
+        background: blue;
+        width: 156px;
+        height: 120px
+    }
+}

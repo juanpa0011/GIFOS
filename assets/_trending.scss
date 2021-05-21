@@ -1,0 +1,52 @@
+.trending {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 45px;
+        width: 236px;
+        justify-self: center;
+        align-self: center;
+        p {
+            size: 14px;
+            color: $lightpurplecolor;
+            align-self: center;
+        }
+        h4 {
+            padding-bottom: 5px;
+            size: 19px;
+            color: $lightpurplecolor;
+            align-self: center;
+        }
+    }
+}
+
+.trendinggifos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: $lightwhite;
+    height: 430px;
+    .galleryfoot {
+        width: 330px;
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        h3 {
+            align-self: center;
+            color: $lightpurplecolor;
+        }
+        p {
+            align-self: center;
+        }
+    }
+    .gallery {
+        align-self: center;
+        width: 260px;
+        height: 180px;
+        background-color: red;
+        margin-bottom: 82px;
+        margin-top: 32px;
+    }
+}

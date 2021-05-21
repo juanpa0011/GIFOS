@@ -1,0 +1,24 @@
+@import "variables";
+@import "trending";
+@import "footer";
+@import "header";
+@import "misgifos";
+@import "btn";
+
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: $font;
+}
+
+.blueline {
+    width: 100%;
+    height: 5px;
+    background-color: $lightpurplecolor;
+}
+h1 {
+    font-size: 20px;
+    color: $lightpurplecolor;
+    font-style: bold;
+}

@@ -1,0 +1,169 @@
+.trendinggifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  background-color: #F3F5F8;
+  width: 100%;
+  height: 430px;
+}
+
+.trendinggifos .galleryfoot {
+  margin-top: 36px;
+  width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.trendinggifos .galleryfoot h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #572EE5;
+}
+
+.trendinggifos .galleryfoot p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.trendinggifos .gallery {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 260px;
+  height: 180px;
+  background-color: red;
+  margin-bottom: 82px;
+  margin-top: 32px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
+footer p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 47px;
+}
+
+footer .sharing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer .sharing img {
+  padding: 22px 19px;
+}
+
+footer .copyright {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 28px;
+}
+
+header div {
+  width: 100%;
+  height: 95px;
+}
+
+header div .logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 6%;
+  margin-top: 35px;
+}
+
+.gifosimg {
+  padding: 6px;
+  margin-bottom: 46px;
+}
+
+.misgifos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 21px;
+  margin: 0px 21px;
+}
+
+.misgifos img {
+  width: 42%;
+  height: 120px;
+}
+
+.misgifos .placeholder {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background: blue;
+  width: 156px;
+  height: 120px;
+}
+
+.btn {
+  margin-top: 78px;
+  margin-bottom: 76px;
+}
+
+.btn button {
+  border: #572EE5 solid 1px;
+  padding: 13px 25px;
+  border-radius: 25px;
+  background: white;
+}
+
+.btn button p {
+  font-size: 13px;
+  color: #572EE5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.blueline {
+  width: 100%;
+  height: 5px;
+  background-color: #572EE5;
+}
+
+h1 {
+  font-size: 20px;
+  color: #572EE5;
+  font-style: bold;
+}
+/*# sourceMappingURL=stylesheetMisGifos.css.map */
