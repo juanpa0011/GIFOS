@@ -1,16 +1,18 @@
 header {
-    div {
-        background-color: white;
-        width: 100%;
-        height: 8%;
-        z-index: 2;
-        margin-bottom: 10px;
-        .logo {
-            img {
-                display: flex;
-                margin-left: 6%;
-                margin-top: 35px;
-            }
+    background-color: white;
+    width: 100%;
+    height: 95px;
+    z-index: 2;
+    margin-bottom: 10px;
+    .navheader {
+        display: none;
+    }
+    .logo {
+        img {
+            display: flex;
+            margin-left: 6%;
+            margin-top: 35px;
+            margin-bottom: 17px;
         }
     }
     input {
@@ -19,7 +21,6 @@ header {
     label {
         float: right;
         cursor: pointer;
-        margin-top: 33px;
         span {
             z-index: 3;
             display: block;
@@ -28,7 +29,7 @@ header {
             width: 15px;
             height: 2px;
             background-color: $lightpurplecolor;
-            margin: 1rem 1.5rem; 
+            margin: 1.5rem 1.5rem; 
             transition: background-color .2s;
             &::before{
                 display: block;
@@ -66,22 +67,17 @@ header {
         z-index: 2;
         li {
             font-size: 15px;
+            font-weight: bold;
             line-height: 40px;
             align-self: center;
-            color: white;
             width: 90%;
             height: 40px;
             font-family: 'Montserrat', sans-serif;
-            a {
-                font-size: 15px;
+            :hover {
+                text-decoration: underline $lightgreencolor;
             }
-            ::after {
-                display: block;
-                content: "";
-                bottom: 5px;
-                width: 30px;
-                height: 10px;
-                background-color: grey;
+            :active {
+                color: #9CAFC3;
             }
         }
     }
@@ -106,10 +102,103 @@ header input:checked ~ label span::after{
 }
 
 .greyline {
-    width: 45px;
-    height: 3px;
+    width: 41px;
+    height: 0.1px;
     content: '';
-    background-color: rgba(119, 116, 129, 0.9);
+    opacity: 0.5;
+    background-color: #FFFFFF;
     align-self: center;
     margin-bottom: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#creategift {
+    display: none;
+}
+
+@media (min-width: 540px) {
+    .greyline {
+        display: none;
+    }
+
+    #creategift {
+        display: initial;
+    }
+    
+
+    a {
+        font-size: 13px;
+        color: $lightpurplecolor;
+        text-decoration: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1.5fr 0.5fr;
+        grid-template-rows: 90px;
+        position: static;
+        height: 90px;
+        justify-items: center;
+        align-items: center;
+        .navheader {
+            display: initial;
+        }
+        div {
+            .logo {
+                display: flex;
+                height: auto;
+                width: auto;
+                img {
+                    margin: 0px;
+                }
+            }
+        }
+        input {
+            display: none;
+        }
+        label {
+            display: none;
+            span {
+                z-index: 0;
+                display: none;
+                &::before{
+                    display: none;
+                }
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        ul {
+            position: relative;
+            display: flex;
+            background-color: transparent;
+            flex-direction: row;
+            justify-content: space-between;
+            width: auto;
+            height: auto;
+            padding: 0px;
+            z-index: 2;
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 16px;
+                width: auto;
+                padding: 0 10px;
+                font-family: 'Montserrat', sans-serif;
+                :hover {
+                    text-decoration: underline $lightgreencolor;
+                }
+                :active {
+                    color: #9CAFC3;
+                }
+            }
+        }
+    }
 }

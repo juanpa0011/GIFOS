@@ -13,6 +13,9 @@ footer {
         img {
             padding: 22px 19px;
         }
+        #facebook :hover {
+            filter: url(./imgs/svg/facebook/icon_facebook_hover.svg);
+        }
     }
     .copyright {
         align-self: center;
