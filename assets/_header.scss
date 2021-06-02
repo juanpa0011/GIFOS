@@ -120,7 +120,20 @@ a {
     display: none;
 }
 
+.navheader {
+    display: none;
+    visibility: hidden;
+}
+
 @media (min-width: 540px) {
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 10px;
+    }
+
     .greyline {
         display: none;
     }
@@ -146,6 +159,18 @@ a {
         align-items: center;
         .navheader {
             display: initial;
+        }
+        .plusbtn {
+            display: flex;
+            justify-self: flex-start;
+            background-color: initial;
+            justify-content: center;
+            align-content: center;
+            img {
+                width: 54px;
+                height: 54px;
+                justify-self: center;
+            }
         }
         div {
             .logo {
@@ -178,7 +203,7 @@ a {
             display: flex;
             background-color: transparent;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
             width: auto;
             height: auto;
             padding: 0px;

@@ -33,3 +33,29 @@ nav {
         }
     }
 }
+
+
+@media (min-width: 540px) {
+    nav {
+        .mainimage {
+            width: 399px;
+            height: 190px;
+            img {
+                width: 399px;
+                height: 190px;
+            }
+        }
+        .navsphere {
+            width: 545px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            input {
+                border: 0px;
+                height: 90%;
+                font-size: 16px;
+            }
+        }
+    }
+}

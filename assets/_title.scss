@@ -17,3 +17,20 @@ main {
     }
     }
 }
+
+@media (min-width: 540px) {
+    main {
+        #containertitle{
+            display: flex;
+            justify-self: center;
+            margin-top: 10px;;
+            .title {
+                width: 600px;
+                h1 {
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+}
