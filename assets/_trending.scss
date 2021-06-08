@@ -52,6 +52,27 @@
 }
 
 @media (min-width: 540px) {
+    .trending {
+        div {
+            margin-top: 70px;
+            margin-bottom: 95px;
+            width: 100%;
+            justify-self: center;
+            align-self: center;
+            p {
+                width: 100%;
+                size: 14px;
+                color: $lightpurplecolor;
+                align-self: center;
+            }
+            h4 {
+                padding-bottom: 5px;
+                size: 19px;
+                color: $lightpurplecolor;
+                align-self: center;
+            }
+        }
+    }
     .trendinggifos {
         height: 640px;
         .gallery{

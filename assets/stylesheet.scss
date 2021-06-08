@@ -17,3 +17,19 @@
     height: 5px;
     background-color: $lightpurplecolor;
 }
+
+
+@media (prefers-color-scheme: dark) {
+    /* dark-theme style */
+    body {
+        background-color: rgb(47, 47, 47);
+        color: #ffb847;
+    }
+
+    /* como ya tenia inventado el modo oscuro, invento el modo claro  para poder usar toggle */
+    /* light-theme style */
+    body.light-theme {
+        background-color: white;
+        color: #ee6352;
+    }
+}

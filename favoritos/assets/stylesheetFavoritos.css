@@ -1,3 +1,38 @@
+.trending div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 45px;
+  width: 236px;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.trending div p {
+  size: 14px;
+  color: #572EE5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.trending div h4 {
+  padding-bottom: 5px;
+  size: 19px;
+  color: #572EE5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .trendinggifos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,15 +41,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-items: center;
   background-color: #F3F5F8;
-  width: 100%;
   height: 430px;
 }
 
 .trendinggifos .galleryfoot {
-  margin-top: 36px;
   width: 330px;
+  margin-top: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,14 +73,74 @@
 }
 
 .trendinggifos .gallery {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   width: 260px;
   height: 180px;
-  background-color: red;
+  background-color: wheat;
   margin-bottom: 82px;
   margin-top: 32px;
+}
+
+@media (min-width: 540px) {
+  .trending div {
+    margin-top: 70px;
+    margin-bottom: 95px;
+    width: 100%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .trending div p {
+    width: 100%;
+    size: 14px;
+    color: #572EE5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .trending div h4 {
+    padding-bottom: 5px;
+    size: 19px;
+    color: #572EE5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .trendinggifos {
+    height: 640px;
+  }
+  .trendinggifos .gallery {
+    justify-self: flex-start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 90%;
+    height: 275px;
+    margin-right: 94px;
+    margin-left: 94px;
+    margin-bottom: 182px;
+    margin-top: 53px;
+  }
+  .trendinggifos .gallery #gifs {
+    width: 1050px;
+  }
+  .trendinggifos .gallery .arrows {
+    font-style: none;
+    background-color: none;
+    width: 40px;
+    height: 40px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 footer {
@@ -96,20 +189,66 @@ footer .copyright {
   margin-bottom: 28px;
 }
 
-header div {
+.misgifos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 21px;
+  margin: 0px 21px;
+}
+
+.misgifos img {
+  width: 42%;
+  height: 120px;
+}
+
+.misgifos .placeholder {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background: blue;
+  width: 156px;
+  height: 120px;
+}
+
+.gifosimg {
+  margin-bottom: 3rem;
+}
+
+.btn {
+  margin-top: 78px;
+  margin-bottom: 76px;
+}
+
+.btn button {
+  border: #572EE5 solid 1px;
+  padding: 13px 25px;
+  border-radius: 25px;
+  background: white;
+}
+
+.btn button p {
+  font-size: 13px;
+  color: #572EE5;
+}
+
+header {
   background-color: white;
   width: 100%;
-  height: 8%;
+  height: 95px;
   z-index: 2;
   margin-bottom: 10px;
 }
 
-header div .logo img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .navheader {
+  display: none;
+}
+
+header .logo {
+  width: 90px;
   margin-left: 6%;
   margin-top: 35px;
+  margin-bottom: 17px;
 }
 
 header input {
@@ -119,7 +258,6 @@ header input {
 header label {
   float: right;
   cursor: pointer;
-  margin-top: 33px;
 }
 
 header label span {
@@ -130,7 +268,7 @@ header label span {
   width: 15px;
   height: 2px;
   background-color: #572EE5;
-  margin: 1rem 1.5rem;
+  margin: 1.5rem 1.5rem;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
 }
@@ -188,7 +326,6 @@ header ul li {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: white;
   width: 90%;
   height: 40px;
   font-family: 'Montserrat', sans-serif;
@@ -245,47 +382,138 @@ a {
   text-decoration: none;
 }
 
-.misgifos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 21px;
-  margin: 0px 21px;
+#creategift {
+  display: none;
 }
 
-.misgifos img {
-  width: 42%;
-  height: 120px;
+.navheader {
+  display: none;
+  visibility: hidden;
 }
 
-.misgifos .placeholder {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  background: blue;
-  width: 156px;
-  height: 120px;
-}
-
-.gifosimg {
-  margin-bottom: 3rem;
-}
-
-.btn {
-  margin-top: 78px;
-  margin-bottom: 76px;
-}
-
-.btn button {
-  border: #572EE5 solid 1px;
-  padding: 13px 25px;
-  border-radius: 25px;
-  background: white;
-}
-
-.btn button p {
-  font-size: 13px;
-  color: #572EE5;
+@media (min-width: 540px) {
+  .logo {
+    content: url("./imgs/svg/logo/logo-desktop.svg");
+    width: 1px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .greyline {
+    display: none;
+  }
+  #creategift {
+    display: initial;
+  }
+  a {
+    font-size: 13px;
+    color: #572EE5;
+    text-decoration: none;
+  }
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 1fr 1.5fr 0.5fr;
+        grid-template-columns: 0.5fr 1fr 1.5fr 0.5fr;
+    -ms-grid-rows: 90px;
+        grid-template-rows: 90px;
+    position: static;
+    margin-bottom: 60px;
+    height: 90px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navheader {
+    display: initial;
+  }
+  header .plusbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: flex-start;
+    background-color: initial;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  header .plusbtn img {
+    width: 54px;
+    height: 54px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  header div .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  header div .logo img {
+    margin: 0px;
+  }
+  header input {
+    display: none;
+  }
+  header label {
+    display: none;
+  }
+  header label span {
+    z-index: 0;
+    display: none;
+  }
+  header label span::before {
+    display: none;
+  }
+  header label span::after {
+    display: none;
+  }
+  header ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    z-index: 2;
+  }
+  header ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    width: auto;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  header ul li :hover {
+    -webkit-text-decoration: underline #50E3C2;
+            text-decoration: underline #50E3C2;
+  }
+  header ul li :active {
+    color: #9CAFC3;
+  }
 }
 
 * {

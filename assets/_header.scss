@@ -8,12 +8,10 @@ header {
         display: none;
     }
     .logo {
-        img {
-            display: flex;
-            margin-left: 6%;
-            margin-top: 35px;
-            margin-bottom: 17px;
-        }
+        width: 90px;
+        margin-left: 6%;
+        margin-top: 35px;
+        margin-bottom: 17px;
     }
     input {
         display: none;
@@ -126,7 +124,10 @@ a {
 }
 
 @media (min-width: 540px) {
-
+    .logo {
+        content:url("./imgs/svg/logo/logo-desktop.svg");
+        width: 1px;
+    }
     .sticky {
         position: fixed;
         top: 0;
@@ -154,6 +155,7 @@ a {
         grid-template-columns: 0.5fr 1fr 1.5fr 0.5fr;
         grid-template-rows: 90px;
         position: static;
+        margin-bottom: 60px;
         height: 90px;
         justify-items: center;
         align-items: center;

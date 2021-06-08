@@ -115,3 +115,111 @@ a {
     color: white;
     text-decoration: none;
 }
+
+
+@media (min-width: 540px) {
+    .logo {
+        content:url("./imgs/svg/logo/logo-desktop.svg");
+        width: 1px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .greyline {
+        display: none;
+    }
+
+    #creategift {
+        display: initial;
+    }
+    
+
+    a {
+        font-size: 13px;
+        color: $lightpurplecolor;
+        text-decoration: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1.5fr 0.5fr;
+        grid-template-rows: 90px;
+        position: static;
+        margin-bottom: 60px;
+        height: 90px;
+        justify-items: center;
+        align-items: center;
+        .navheader {
+            display: initial;
+        }
+        .plusbtn {
+            display: flex;
+            justify-self: flex-start;
+            background-color: initial;
+            justify-content: center;
+            align-content: center;
+            img {
+                width: 54px;
+                height: 54px;
+                justify-self: center;
+            }
+        }
+        div {
+            .logo {
+                display: flex;
+                height: auto;
+                width: auto;
+                img {
+                    margin: 0px;
+                }
+            }
+        }
+        input {
+            display: none;
+        }
+        label {
+            display: none;
+            span {
+                z-index: 0;
+                display: none;
+                &::before{
+                    display: none;
+                }
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        ul {
+            position: relative;
+            display: flex;
+            background-color: transparent;
+            flex-direction: row;
+            justify-content: flex-end;
+            grid-column-start: 3;
+            width: 100%;
+            padding: 0px;
+            z-index: 2;
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 16px;
+                width: auto;
+                padding: 0 10px;
+                font-family: 'Montserrat', sans-serif;
+                :hover {
+                    text-decoration: underline $lightgreencolor;
+                }
+                :active {
+                    color: #9CAFC3;
+                }
+            }
+        }
+    }
+}

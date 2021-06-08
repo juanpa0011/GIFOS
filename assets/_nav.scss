@@ -1,12 +1,13 @@
 nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr;
-    justify-content: center;
-    div {
-        width: 73%;
-        height: 130px;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    > img {
+        width: 220px;
+        height: 100px;
         justify-self: center;
+        align-self: flex-end;
     }
     .navsphere {
         display: grid;
@@ -37,13 +38,10 @@ nav {
 
 @media (min-width: 540px) {
     nav {
-        .mainimage {
+        img {
             width: 399px;
             height: 190px;
-            img {
-                width: 399px;
-                height: 190px;
-            }
+            justify-self: center;
         }
         .navsphere {
             width: 545px;
@@ -53,8 +51,10 @@ nav {
             }
             input {
                 border: 0px;
+                width: 350px;
                 height: 90%;
                 font-size: 16px;
+                text-align: left;
             }
         }
     }
